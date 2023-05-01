@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+.container {
+    background-image: url(./assets/nightsky.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+}
+.first {
+    background-image: url(./assets/landleft.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 1s ease-in-out;
+}
+.second {
+    background-image: url(./assets/landright.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 1s ease-in-out;
+}
+.third {
+    background-image: url(./assets/treeleft.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 2s ease-in-out;
+}
+.fourth {
+    background-image: url(./assets/treeright.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 2s ease-in-out;
+}
+.fifth {
+    background-image: url(./assets/moon.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 3s ease-in-out;
+}
+.sixth {
+    background-image: url(./assets/mountain.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 3s ease-in-out;
+}
+.secondpage {
+    background-color: blue;
+    height: 100vh;
+    width: 100%;
+}
+.container:hover .first {
+    animation: up 1s ease-in-out;
+}
+.container:hover .second {
+    animation: up 1s ease-in-out;
+}
+.container:hover .third {
+    animation: up 2s ease-in-out;
+}
+.container:hover .fourth {
+    animation: up 2s ease-in-out;
+}
+.container:hover .fifth {
+    animation: up 3s ease-in-out;
+}
+.container:hover .sixth {
+    animation: up 3s ease-in-out;
+}
+@keyframes up {
+    0% {
+        transform: translatey(100%);
+    }
+    100% {
+        transform: translatey(0%);
+    }
+}
